@@ -119,4 +119,10 @@ h1, h2, h3, h4, h5, h6 {
   background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)); 
   background-size: cover;
   background-position: center;
+  background-image: url();
 } 
+.responsoveimg{
+  width:300px ; 
+  height:250px;
+  object-fit: cover;
+}
