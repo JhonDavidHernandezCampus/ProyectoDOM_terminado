@@ -1,6 +1,5 @@
 
 export default{
-
     title:{
         name: "Investiga para viajar cono en tus sueños",
         href: "#"

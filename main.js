@@ -1,8 +1,6 @@
 import myHeader from "./conponents/myHeader.js";
-import myBanners from "./myBanners.js";
-import myPost from "./myBanners";
-
-console.log();
+import myBanners from "./conponents/myBanners.js";
+import myPost from "./conponents/myPost.js"; 
 
 myHeader.listViajes();
 myHeader.listTitle();
@@ -10,4 +8,4 @@ myHeader.listTitle();
 myBanners.showImage();
 myBanners.showTidulos();
 
-myPost.
+myPost.showpost();

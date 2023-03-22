@@ -1,5 +1,5 @@
 export default{
-
+    
     title:"Tus vacaciones soñadas",
     paragratf:"Cada viaje de Rutopía es un perfecto balance entre los intereses de quienes viajan y sus necesidades y los lugares que visitan Comienza a diseñar tu viaje personalizado llenando este formulario",
 
