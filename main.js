@@ -15,3 +15,5 @@ myPost.showpost();
 myAside.showAside();
 
 mySection.showtitulo();
+mySection.showcontrenido();
+mySection.showLista();
