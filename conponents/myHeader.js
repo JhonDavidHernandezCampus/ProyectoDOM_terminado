@@ -44,7 +44,6 @@ export default{
         this.viajes.forEach((val,id) => {
         plantilla += `<a class="p-2 link-secondary" href="${val.href}">${val.name}</a>`
         });
-        console.log(plantilla);
         document.querySelector("#viajes").insertAdjacentHTML("beforeend", plantilla)
 
     }
