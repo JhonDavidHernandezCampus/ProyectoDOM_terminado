@@ -1,7 +1,7 @@
 
 export default{
     title:{
-        name: "Investiga para viajar cono en tus sueños",
+        name: "Investiga para viajar como en tus sueños",
         href: "#"
     },
 
@@ -29,8 +29,8 @@ export default{
         { 
         name:"Bibliografía",
         href:"#"    
-        }
-
+        },
+        
     ],
     
     listTitle(){

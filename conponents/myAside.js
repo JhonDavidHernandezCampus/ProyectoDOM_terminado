@@ -53,7 +53,6 @@ export default{
             )
         })
         document.querySelector("#nav").insertAdjacentHTML("beforeend", data.join(""));
-        this.consejo()
     },
 
     cards(par1){
@@ -73,12 +72,5 @@ export default{
       </div>`; 
 
     },
-    consejo(){
-        document.querySelector("nav").insertAdjacentHTML("beforeend",
-        `<div class="p-4 mb-3 bg-light rounded">
-            <h4 class="fst-italic">${this.title}</h4>
-            <p class="mb-0">${this.paragrangh}</p>
-      </div>`
-      )},
 
 }

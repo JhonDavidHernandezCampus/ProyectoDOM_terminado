@@ -13,6 +13,5 @@ myBanners.showTidulos();
 myPost.showpost();
 
 myAside.showAside();
-myAside.consejo();
 
 mySection.showtitulo();
