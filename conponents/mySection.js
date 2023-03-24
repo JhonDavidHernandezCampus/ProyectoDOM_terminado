@@ -188,10 +188,13 @@ export default{
         `)
     },
 
+    /* me muestra el ultimo parrafo de la seccion  */
+
     titulofin:"¿Estas preparado para tu viaje?",
-    parrafo1:"claro",
-    parrafo2:"que paso?",
-    parrafo3:"yes",
+    parrafo1:"Muesrame mas",
+    href1:"https://www.viajesfalabella.com.co/paquetes/?gclid=Cj0KCQjwlPWgBhDHARIsAH2xdNclCYpr7hJ6NhWRe66wCzipF_KQwjHV07wV0KNCpioS6vB8WLz7H9kaAlc3EALw_wcB&mktdata=key%3DJU2BGE0FV1UKMCGIUTAEK8NSA8%26c%3D10585631892%26accountid%3D3627749274%26pr%3DX%26cc%3DCO%26n%3Dg%26d%3Dc%26campaignid%3D10585631892%26adgroupid%3D104961163592%26kw%3D%26adid%3D449625867061%26targetid%3Ddsa-929133462635%26locationid%3D1029315%26gclid%3DCj0KCQjwlPWgBhDHARIsAH2xdNclCYpr7hJ6NhWRe66wCzipF_KQwjHV07wV0KNCpioS6vB8WLz7H9kaAlc3EALw_wcB%26id%3D20230324123805130105408612005222%26trackeame_user_id%3D128F5A984DB7167933442904505b18fbf-0f79-47b1-9fd4-67712cb729415487107",
+    parrafo2:"En conclusión, esperamos que esta página de viajes te haya sido útil y entretenida. En ella, hemos intentado brindarte información detallada y valiosa sobre distintos destinos alrededor del mundo, así como consejos y recomendaciones para que puedas disfrutar al máximo de tus aventuras. Sabemos que cada viaje es una experiencia única e inolvidable, y esperamos haberte ayudado a planificar tus próximas aventuras de manera más fácil y efectiva. No dudes en compartir tus comentarios y sugerencias con nosotros, y ¡que tengas un excelente viaje!",
+    parrafo3:"Además, en esta página de viajes, también podrás encontrar información sobre diferentes formas de viajar, desde el turismo tradicional hasta el ecoturismo y el turismo sostenible. Creemos que viajar no solo es una forma de explorar el mundo, sino también de aprender y contribuir al cuidado del planeta. Por eso, hemos compartido consejos y recomendaciones para viajar de manera responsable y respetuosa con el medio ambiente y las comunidades locales. Esperamos que nuestra página te inspire a viajar de forma consciente y a hacer una diferencia positiva en el mundo. ¡Que disfrutes tu viaje!",
 
 
 
@@ -199,15 +202,10 @@ export default{
     finalizacion(){
     document.querySelector("#final").insertAdjacentHTML("beforeend",`
     <h2 class="blog-post-title">${this.titulofin}</h2>
-    <p class="blog-post-meta"><a href="#">${this.parrafo1}</a></p>
+    <p class="blog-post-meta"><a href="${this.href1}" target="_blank">${this.parrafo1}</a></p>
     <p>${this.parrafo2}</p>
     <p>${this.parrafo3}</p>
-    
-    `)
-
-    }
-
-
+    `)}
 }
 
 

@@ -1,3 +1,11 @@
+/* body{
+  background-image: url(../img/istockphoto-1218305065-612x612.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+} 
+ */
+
 /* stylelint-disable selector-list-comma-newline-after */
 .bd-placeholder-img {
   font-size: 1.125rem;
@@ -126,4 +134,7 @@ h1, h2, h3, h4, h5, h6 {
   width:300px ; 
   height:250px;
   object-fit: cover;
-}
+}/* 
+a{
+  color:black;
+} */
