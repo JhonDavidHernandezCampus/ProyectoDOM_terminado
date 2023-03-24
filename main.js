@@ -16,4 +16,6 @@ myAside.showAside();
 
 mySection.showtitulo();
 mySection.showcontrenido();
-mySection.showLista();
+mySection.listaRecomendados();
+mySection.tablaRecomandados();
+mySection.finalizacion();
