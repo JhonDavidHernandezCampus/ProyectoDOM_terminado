@@ -4,8 +4,9 @@ import myPost from "./conponents/myPost.js";
 import myAside from "./conponents/myAside.js";
 import mySection from "./conponents/mySection.js";
 
-myHeader.listViajes();
-myHeader.listTitle();
+/* myHeader.listViajes();
+myHeader.listTitle(); */
+myHeader.fragShow();
 
 myBanners.showImage();
 myBanners.showTidulos();
