@@ -1,3 +1,4 @@
+/* Cuando lo abra en el comptadopr si no funciona poner "export aqui (por el navegador))" */
 let wsMyHeader = {
     
     listTitle(p1){

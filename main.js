@@ -11,6 +11,10 @@ myHeader.fragShow();
 myBanners.showImage();
 myBanners.showTidulos();
 
+myBanners.Show();
+
+
+
 myPost.showpost();
 
 myAside.showAside();

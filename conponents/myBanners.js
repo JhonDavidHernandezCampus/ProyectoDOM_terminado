@@ -9,14 +9,12 @@ export default{
     },
 
 
-
-
-    image:"../img/viaje.webp",
+    /* image:"../img/viaje.webp",
     showImage(){
         document.querySelector(".imgStyle").style.
         backgroundImage = `url(${this.image})`
     },
-
+ */
     showTidulos(){
         document.querySelector("#showSection").insertAdjacentHTML(
         "beforeend" , ` 
@@ -27,7 +25,19 @@ export default{
         <p class="lead mb-0"><a href="${this.btn.href}" class="text-white fw-bold">${this.btn.title}</a></p>
        `
         )
+    },
+
+    Show(){
+        const ws = new Worker("storage/wsMyBanners.js",{type:"module"});
+        let id =[];
+        let count = 0;
+
+        ws.postMessage({module:"showImage"})
+
+
+
     }
+
 
 
 }
