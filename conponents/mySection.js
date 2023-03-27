@@ -88,7 +88,6 @@ export default{
 
     listaRecomendados(){
         /* esta parte me muestra las listas de los lugares recomandados a visitar */
-        console.log(this.title);
         document.querySelector("article").insertAdjacentHTML("beforeend",`
             <h3>${this.titlelista}</h3>
             <p>${this.parrafolista}</p>
@@ -166,7 +165,6 @@ export default{
 
         `)
 
-        console.log(this.pais);
         document.querySelector(".table").insertAdjacentHTML("beforeend",`
         <thead>  
             <tr>

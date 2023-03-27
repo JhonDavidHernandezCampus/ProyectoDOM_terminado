@@ -1,7 +1,7 @@
-export let wsMyHeader = {
+let wsMyHeader = {
     
-    listTitle(){
-        return`<a class="blog-header-logo text-dark text-decoration-none " href="${this.title.href}">${this.title.name}</a>
+    listTitle(p1){
+        return`<a class="blog-header-logo text-dark text-decoration-none " href="${p1.href}">${p1.name}</a>
         `;
     },
 
@@ -16,6 +16,6 @@ export let wsMyHeader = {
     
 }
 self.addEventListener("message",(e)=>{
-    postMessage(wsMyHeader[`${e.data.module}`](e.data.data) )
+    postMessage(wsMyHeader[`${e.data.module}`](e.data.data))
 
 })

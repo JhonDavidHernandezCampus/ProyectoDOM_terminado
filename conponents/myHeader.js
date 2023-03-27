@@ -58,21 +58,21 @@ export default{
         /* creamos el worker */
         
         const ws = new Worker("storage/wsMyHeader.js",{type: "module"});
-
+        let id=[];
         let count = 0;
         //enviamos los mensajes el worker
         //enviamosdos mensajes por que son dos funciones, se deben enviar en orden segun como esten en el worker 
         //Y en la lista creada abajo
         ws.postMessage({module: "listTitle", data: this.title})
         ws.postMessage({module: "listViajes", data: this.viajes})
-        id = ["#title","#viajes"]
+        id = ["#title","#viajes"];  
         
         //Esto es lo que resivimos del worker
         ws.addEventListener("message",(e) => {
             //Parseamos lo que trae el evento(mensaje)
-            let doc = new DOMParser().parseFromString(e.data,"text/html");
+            let doc = new DOMParser().parseFromString(e.data, "text/html");
             //insertamos en nuestro index los selectores por medio del array 
-            document.querySelector(id[count]).append(...doc.boby.children);
+            document.querySelector(id[count]).append(...doc.body.children);
             (id.length-1==count)?ws.terminate():count++;
             
             

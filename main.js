@@ -5,7 +5,7 @@ import myAside from "./conponents/myAside.js";
 import mySection from "./conponents/mySection.js";
 
 /* myHeader.listViajes();
-myHeader.listTitle(); */
+myHeader.listTitle(); */ 
 myHeader.fragShow();
 
 myBanners.showImage();
