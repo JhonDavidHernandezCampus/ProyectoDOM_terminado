@@ -11,6 +11,7 @@ myHeader.fragShow();
 myBanners.showImage();
 myBanners.showTidulos();
  */
+
 myBanners.Show();
 
 
