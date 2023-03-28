@@ -45,8 +45,10 @@ export default{
         
         //Esto es lo que resivimos del worker
         ws.addEventListener("message",(e) => {
+            
             //Parseamos lo que trae el evento(mensaje)
             let doc = new DOMParser().parseFromString(e.data, "text/html");
+
             //insertamos en nuestro index los selectores por medio del array 
             document.querySelector(id[count]).append(...doc.body.children);
             (id.length-1==count)?ws.terminate():count++;

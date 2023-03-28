@@ -6,21 +6,21 @@ import mySection from "./conponents/mySection.js";
 
 /* myHeader.listViajes();
 myHeader.listTitle(); */ 
-myHeader.fragShow();
+
 /* 
 
 myBanners.showImage();
 myBanners.showTidulos();
  */
 
+myHeader.fragShow();
 myBanners.Show();
-
-
 myPost.show();
 
 
-
 myAside.showAside();
+
+
 
 mySection.showtitulo();
 mySection.showcontrenido();

@@ -60,18 +60,19 @@ export default{
 
  
     show(){
-
-
+        let count=0;
         const ws = new Worker("storage/wsMyPost.js",{type:"module"});
 
         this.post.forEach((val,id)=>{
-                  ws.postMessage({module:"showpost", data:this.post[id],data2: this.post[id].btn})
+                ws.postMessage({module:"showpost", data:this.post[id],data2: this.post[id].btn})
         });
 
 
         ws.addEventListener("message", (e)  =>{
             let doc = new DOMParser().parseFromString(e.data,"text/html");
             document.querySelector("#contPost").append(...doc.body.children);
+            (this.post.length-1==count)?ws.terminate():count++;
+            
         
         })
 

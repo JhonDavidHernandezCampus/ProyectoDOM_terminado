@@ -18,5 +18,8 @@ let wsMyHeader = {
 }
 self.addEventListener("message",(e)=>{
     postMessage(wsMyHeader[`${e.data.module}`](e.data.data))
-
 })
+
+
+
+
