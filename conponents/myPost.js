@@ -60,11 +60,22 @@ export default{
 
  
     show(){
-      /*   const ws = new Worker("storage/wsMyPost.js",{type:"module"})
 
-        ws.postMessage({module:"showpost", data:this.post})
-         */
+
+        const ws = new Worker("storage/wsMyPost.js",{type:"module"});
+
         this.post.forEach((val,id)=>{
+                  ws.postMessage({module:"showpost", data:this.post[id],data2: this.post[id].btn})
+        });
+
+
+        ws.addEventListener("message", (e)  =>{
+            let doc = new DOMParser().parseFromString(e.data,"text/html");
+            document.querySelector("#contPost").append(...doc.body.children);
+        
+        })
+
+        /* this.post.forEach((val,id)=>{
             document.querySelector("#contPost").insertAdjacentHTML("beforeend", `
             <div class="col-md-6">
                 <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative" id="cards">
@@ -81,7 +92,7 @@ export default{
                 </div>
             </div>`
             );
-        }); 
+        });  */
     }
 
 }

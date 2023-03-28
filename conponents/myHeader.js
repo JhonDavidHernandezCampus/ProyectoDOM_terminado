@@ -1,15 +1,12 @@
     /* aqui estamos iportando la data para el header desde el 
-    archivo config*//* 
-
-import config from "../storage/config"; */
+    archivo config*/
+import config from "../storage/config.js";
 
 export default{
     
 
-
-
-
 /* esto ya lo pasamos a wsMyHeader */
+
 /*    
     listTitle(){
         document.querySelector("#title").insertAdjacentHTML("beforeend",`
@@ -28,10 +25,11 @@ export default{
 
     fragShow(){
         /* traemos la data que se encuentra en confog en el la funcion
-        dataMyHeader *//* 
+        dataMyHeader */ 
+
+
         config.dataMyHeader();
         Object.assign(this, JSON.parse(localStorage.getItem("myHeader")));
-        console.log(this); */
 
         /* creamos el worker */
         

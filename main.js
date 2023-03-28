@@ -28,6 +28,12 @@ mySection.listaRecomendados();
 mySection.tablaRecomandados();
 mySection.finalizacion();
 
+
+
+
+
+
+/* 
 localStorage.setItem("key","el nombre")
 localStorage.setItem("Nombre","jhon")
 
@@ -38,4 +44,4 @@ localStorage.setItem("Persona",)[
 {
     nombre:"david"
 }
-]
+] */

@@ -2,12 +2,8 @@ let wsMyPost = {
 
 
     showpost(p1){
-        console.log("dentra aal worker",p1);
-        console.log(p1.btn);
         let baners ="";
-
-        p1.forEach((val,id)=>{ 
-            baners +=`<div class="col-md-6">
+            baners +=`<div class="col-md-7">
                 <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative" id="cards">
                     <div class="col p-4 d-flex flex-column position-static">
                         <strong class="d-inline-block mb-2 text-primary">${p1.article}</strong>
@@ -22,7 +18,7 @@ let wsMyPost = {
                 </div>
             </div>`
             
-        });
+        
         return baners;
     }
 
