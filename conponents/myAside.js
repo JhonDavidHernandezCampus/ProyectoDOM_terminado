@@ -1,3 +1,5 @@
+
+
 export default{
     nav :[
         {
@@ -43,7 +45,7 @@ export default{
             paragrangh:"Viajar es una experiencia enriquecedora que puede proporcionar una amplia gama de beneficios para la salud mental y emocional, así como para el crecimiento personal.",
         },
     ],
-
+/* 
     showAside(){
         const data = this.nav.map((val,id)=> {
             return(
@@ -71,6 +73,23 @@ export default{
             </ol>
         </div>`; 
 
-    },
+    }, */
+    showAside(){
+        const ws = new Worker("storage/wsMrAside.js",{type :"module"});
+        const data = this.nav.map((val,id)=> {
+            return(
+            (val.link)
+                ?ws.postMessage({module:"listTitle", data: val})
+                :ws.postMessage({module: "listViajes", data: val})
+            );
+        })
+
+        ws.addEventListener("message", (e)=> {
+            let doc = new DOMParser().parseFromString(e.data,"text/html");
+            document.querySelector("#nav").append(...doc.body.children);
+        
+    
+    })
+    }
 
 }
