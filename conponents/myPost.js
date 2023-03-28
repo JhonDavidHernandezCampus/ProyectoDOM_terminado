@@ -59,8 +59,16 @@ export default{
     ],
 
  
-    showpost(){
-        this.post.forEach((val,id)=>{
+    show(){
+
+
+        const ws = new Worker("storage/wsMyPost.js",{type:"module"})
+
+        ws.postMessage({module:"showpost", data:this.post})
+        
+
+
+        /* this.post.forEach((val,id)=>{
             document.querySelector("#contPost").insertAdjacentHTML("beforeend", `
             <div class="col-md-6">
                 <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative" id="cards">
@@ -77,7 +85,7 @@ export default{
                 </div>
             </div>`
             );
-        });
+        }); */
     }
 
 }
