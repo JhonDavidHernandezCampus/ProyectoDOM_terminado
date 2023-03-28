@@ -42,7 +42,6 @@ export default{
             //insertamos en nuestro index los selectores por medio del array
             document.querySelector(id[count]).append(...doc.body.children);
             (id.length-1==count)?ws.terminate():count++;
-            console.log("",count,"otra",id[count]);
 
         })
         

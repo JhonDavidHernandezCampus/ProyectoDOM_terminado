@@ -1,7 +1,6 @@
 let wsMyBanners = {
 
     showImage(p1){
-        console.log("aqui debe estar la imagen",p1);
         
         return `<img src="${p1}"  style="background-size: cover; background-position: center;" id="imgStyle">`
         

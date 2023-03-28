@@ -8,6 +8,7 @@ import mySection from "./conponents/mySection.js";
 myHeader.listTitle(); */ 
 myHeader.fragShow();
 /* 
+
 myBanners.showImage();
 myBanners.showTidulos();
  */
@@ -15,8 +16,9 @@ myBanners.showTidulos();
 myBanners.Show();
 
 
+myPost.show();
 
-myPost.showpost();
+
 
 myAside.showAside();
 
@@ -25,3 +27,15 @@ mySection.showcontrenido();
 mySection.listaRecomendados();
 mySection.tablaRecomandados();
 mySection.finalizacion();
+
+localStorage.setItem("key","el nombre")
+localStorage.setItem("Nombre","jhon")
+
+localStorage.setItem("Persona",)[
+{
+    nombre:"ferrer"
+},
+{
+    nombre:"david"
+}
+]

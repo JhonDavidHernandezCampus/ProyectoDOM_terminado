@@ -1,38 +1,10 @@
+    /* aqui estamos iportando la data para el header desde el 
+    archivo config*//* 
+
+import config from "../storage/config"; */
 
 export default{
-    title:{
-        name: "Investiga para viajar como en tus sueños",
-        href: "#"
-    },
-
-    viajes : [
-        { 
-        name:"Jamaica",
-        href:"#"    
-        },
-        { 
-        name:"Viajes y turismo",
-        href:"#"    
-        },
-        { 
-        name:"Historia",
-        href:"#"    
-        },
-        { 
-        name:"Véase también",
-        href:"#"    
-        },
-        { 
-        name:"Referencias",
-        href:"#"    
-        },
-        { 
-        name:"Bibliografía",
-        href:"#"    
-        },
-        
-    ],
-
+    
 
 
 
@@ -55,6 +27,12 @@ export default{
     /* esto ya es de otra clase en la que apremdimos DOMparser */
 
     fragShow(){
+        /* traemos la data que se encuentra en confog en el la funcion
+        dataMyHeader *//* 
+        config.dataMyHeader();
+        Object.assign(this, JSON.parse(localStorage.getItem("myHeader")));
+        console.log(this); */
+
         /* creamos el worker */
         
         const ws = new Worker("storage/wsMyHeader.js",{type: "module"});
