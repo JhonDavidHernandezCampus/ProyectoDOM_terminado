@@ -44,7 +44,7 @@ export default{
         <a class="blog-header-logo text-dark text-decoration-none " href="${this.title.href}">${this.title.name}</a>
         `)
     },
-     listViajes(){ 
+    listViajes(){ 
         let plantilla = "";
         this.viajes.forEach((val,id) => {
         plantilla += `<a class="p-2 ) text-decoration-none " href="${val.href}">${val.name}</a>`
@@ -78,7 +78,7 @@ export default{
             
         })
 
-       /*  let doc = new DOMParser().parseFromString("<h1>Hola Mundo</h1>", "text/html");
+    /*  let doc = new DOMParser().parseFromString("<h1>Hola Mundo</h1>", "text/html");
         console.log(doc.querySelector("h1")); */
     }
 

@@ -7,10 +7,10 @@ import mySection from "./conponents/mySection.js";
 /* myHeader.listViajes();
 myHeader.listTitle(); */ 
 myHeader.fragShow();
-
+/* 
 myBanners.showImage();
 myBanners.showTidulos();
-
+ */
 myBanners.Show();
 
 
