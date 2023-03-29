@@ -18,7 +18,7 @@ myBanners.Show();
 myPost.show();
 
 
-myAside.showAside();
+myAside.show();
 
 
 

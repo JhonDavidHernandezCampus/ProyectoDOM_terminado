@@ -9,6 +9,7 @@ export default{
         },
         {
             title:"Ten encuenta:",
+            paragrangh:"",
             link:[
                 {
                     name:"1- Documentación en regla",
@@ -74,22 +75,23 @@ export default{
         </div>`; 
 
     }, */
-    showAside(){
-        const ws = new Worker("storage/wsMrAside.js",{type :"module"});
-        const data = this.nav.map((val,id)=> {
-            return(
-            (val.link)
-                ?ws.postMessage({module:"listTitle", data: val})
-                :ws.postMessage({module: "listViajes", data: val})
-            );
-        })
+    show(){
+        let count=0;
+        const ws = new Worker("storage/wsMyAside.js",{type :"module"});
 
+        ws.postMessage({module:"cards", data: this.nav});
+        ws.postMessage({module:"list", data: this.nav[1]});
+
+
+        
         ws.addEventListener("message", (e)=> {
             let doc = new DOMParser().parseFromString(e.data,"text/html");
+
             document.querySelector("#nav").append(...doc.body.children);
-        
+            
+            (this.nav.length-1==count)?ws.terminate():count++;
     
-    })
+        })
     }
 
 }
