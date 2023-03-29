@@ -22,11 +22,12 @@ myAside.show();
 
 
 
-mySection.showtitulo();
+mySection.show();/* 
+
 mySection.showcontrenido();
 mySection.listaRecomendados();
 mySection.tablaRecomandados();
-mySection.finalizacion();
+mySection.finalizacion(); */
 
 
 

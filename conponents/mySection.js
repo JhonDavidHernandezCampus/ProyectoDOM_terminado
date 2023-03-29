@@ -21,6 +21,7 @@ export default{
             nombre:"Viajes.com",
         },
     ],
+    
     titlelista:"Lugares con las mejores recomendaciones",
     parrafolista:"",
     listas:[
