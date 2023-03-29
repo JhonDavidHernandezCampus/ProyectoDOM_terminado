@@ -21,8 +21,8 @@ myPost.show();
 myAside.show();
 
 
-
 mySection.show();/* 
+
 
 mySection.showcontrenido();
 mySection.listaRecomendados();

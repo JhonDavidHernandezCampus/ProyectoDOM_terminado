@@ -24,15 +24,13 @@ export default{
     /* esto ya es de otra clase en la que apremdimos DOMparser */
 
     fragShow(){
+
         /* traemos la data que se encuentra en confog en el la funcion
         dataMyHeader */ 
-
-
         config.dataMyHeader();
         Object.assign(this, JSON.parse(localStorage.getItem("myHeader")));
 
         /* creamos el worker */
-        
         const ws = new Worker("storage/wsMyHeader.js",{type: "module"});
         let id=[];
         let count = 0;
