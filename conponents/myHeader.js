@@ -25,7 +25,7 @@ export default{
 
     fragShow(){
 
-        /* traemos la data que se encuentra en confog en el la funcion
+        /* traemos la data que se encuentra en config en el la funcion
         dataMyHeader */ 
         config.dataMyHeader();
         Object.assign(this, JSON.parse(localStorage.getItem("myHeader")));

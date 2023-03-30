@@ -2,7 +2,7 @@ let wsMyBanners = {
 
     showImage(p1){
         
-        return `<img src="${p1}"  style="background-size: cover; background-position: center;" id="imgStyle">`
+        return `<img src="${""}"  style="background-size: cover; background-position: center;" id="imgStyle">`
         
         /* (".imgStyle").style.
         backgroundImage = `url(${p1.image})` */
